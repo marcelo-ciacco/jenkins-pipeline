@@ -28,8 +28,8 @@ pipeline {
         stage('Deploy com Docker Compose'){
             steps{
                 script{
-                    sh 'docker-compose down'
-                    sh 'docker-compose up -d'
+                    sh 'docker compose down'
+                    sh 'docker compose up -d'
                 }
             }
         }
