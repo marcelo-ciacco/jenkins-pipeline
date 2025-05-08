@@ -23,7 +23,7 @@ services:
     ports:
       - "4000:4000"
     networks:
-      - app-net
+      app-net
 
   report:
     image: marcelociaccounifeob/report-app:latest
@@ -34,7 +34,7 @@ services:
     ports:
       - "4040:4040"
     networks:
-      - app-net
+      app-net
 
 volumes:
   db_data:
